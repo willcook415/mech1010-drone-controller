@@ -4,7 +4,7 @@ This project was developed as part of the **MECH1010 Mechatronics & Programming*
 
 ## Project Summary
 
-The system uses sensor feedback (e.g., potentiometer and angle sensor) to adjust motor speed via a proportional controller. It aims to bring the drone arm to a target angle and shut down safely once within tolerance.
+The system uses sensor feedback (e.g., potentiometer and angle sensor) to adjust motor speed via a proportional controller. It applies proportional control to height error, records whether the target tolerance is sustained, and initiates shutdown after a fixed five-second run.
 
 ### Objectives:
 - Read angle data from sensors
@@ -20,15 +20,14 @@ The system uses sensor feedback (e.g., potentiometer and angle sensor) to adjust
 
 ## Results
 
-During the test, the system successfully brought the drone arm within the target range and shut down safely. Logged data shows stable convergence and minimal overshoot.
+The repository includes a recorded test run, telemetry and a screenshot. These are examples from the coursework setup; no automated test suite or quantified performance analysis is included.
 
-![Demo Screenshot](screenshot.png) <!-- optional if you want to add an image frame from video -->
+![Demo Screenshot](screenshot.png)
 
 ## Tech Stack
 
 - Arduino Uno
 - Potentiometer & angle sensor
-- MATLAB (for analysis)
 - CSV logging
 
 ## Author
@@ -39,4 +38,4 @@ University of Leeds
 
 ---
 
-> This project demonstrates core skills in embedded systems, control theory, and data analysis — built from scratch as a first-year engineering project.
+> First-year coursework record. Hardware and calibration assumptions are specific to the original rig.
